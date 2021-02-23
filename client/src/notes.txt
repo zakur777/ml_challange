@@ -1,0 +1,25 @@
+npm install classnames primeicons primereact prop-types primeflex axios react-router-dom
+
+
+
+npm install --save @fortawesome/fontawesome-free  --> si es que quisieras ocupar estos icnos en vez de los de primereact
+
+https://use.fontawesome.com/releases/v5.10.0/css/all.css
+
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.css';
+
+
+
+
+import PrimeReact from 'primereact/api';
+
+PrimeReact.ripple = true;
+
+
+
+Instalacion de herramientas para redux
+
+npm install redux react-redux redux-thunk redux-devtools
