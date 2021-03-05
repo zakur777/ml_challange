@@ -1,0 +1,28 @@
+.p-card {
+    box-shadow: 2px 2px 1px -1px rgb(0 0 0 / 20%), 2px 1px 2px 2px rgb(0 0 0 / 14%), 2px 1px 3px 2px rgb(0 0 0 / 12%);
+    border-radius: 8px;
+}
+
+.p-card .p-card-body {
+    padding: 5px;
+}
+
+.p-card .p-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    height: 3rem;
+}
+
+.p-card .p-card-footer {
+    padding: 5px 0 0 0;
+}
+
+.p-card .p-card-content {
+    padding: 1.3rem 0;
+    
+}
+
+.pi {
+    font-size: 0.8rem;
+}

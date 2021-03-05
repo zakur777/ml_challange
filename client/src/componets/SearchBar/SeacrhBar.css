@@ -1,0 +1,8 @@
+.p-inputgroup .p-inputtext, 
+.p-fluid .p-inputgroup .p-inputtext, 
+.p-inputgroup .p-inputwrapper, 
+.p-fluid .p-inputgroup .p-input {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 166px;
+}

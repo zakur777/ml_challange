@@ -5,6 +5,7 @@ import Image from 'react-image-resizer';
 import { Badge } from 'primereact/badge';
 import { Tag } from 'primereact/tag';
 import { objectOf } from 'prop-types';
+import './ProductCard.css'
 
 function ProductCard(props) {
     //        <img alt="Card" src={image} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} />
@@ -16,7 +17,7 @@ function ProductCard(props) {
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
-          marginTop: "2rem"
+          marginTop: "5px"
         },
       };
 
@@ -50,11 +51,17 @@ function ProductCard(props) {
     
     
     return (
+            //{/* substring(0,45) */}
+            /**   new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number)    */
+
+        <Card  
+        
+          title={props.title.substring(0,58)}  
+          style={{ width: '15rem', marginRight: '5rem', marginBottom: '2em', borderTop: '1px solid #EAE8E8' }} 
+          footer={footer(props.available_quantity, props.condition)} header={header(props.thumbnail)}>
+          <i className="pi pi-dollar"><span style={{ fontSize: '1rem'}}>{props.price.toLocaleString('es-AR')} </span><span>{props.currency_id}</span></i>
             
-                <Card title={props.title.substring(0,45)}  style={{ width: '20rem', marginRight: '5rem', marginBottom: '5rem' }} footer={footer(props.available_quantity, props.condition)} header={header(props.thumbnail)}>
-                  <i className="pi pi-dollar"><span style={{ fontSize: '1.5rem'}}>{props.price} </span><span>{props.currency_id}</span></i>
-                    
-                </Card>          
+        </Card>          
         
     )
 }
